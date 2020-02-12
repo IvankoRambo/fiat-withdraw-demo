@@ -1,0 +1,41 @@
+.b-service-address {
+    &-qr {
+        width: 200px;
+        margin: {
+            top: 15px;
+            bottom: 15px;
+        }
+    }
+
+    &-info {
+        &-title {
+            margin-bottom: .5rem;
+        }
+
+        &-field {
+            background: $color_17;
+            border-radius: 4px;
+            color: $color_1;
+            padding: {
+                top: 18px;
+                bottom: 14px;
+                left: 14px;
+            }
+
+            @include font_subheading_section;
+        }
+
+        &-copy {
+            height: 49px;
+            min-width: 135px;
+            margin-top: 24px;
+            color: $color_30;
+            background: transparent;
+            border-radius: 4px;
+            mix-blend-mode: normal;
+            border: 1px solid $color_30;
+            box-sizing: border-box;
+            box-shadow: 0px 2px 6px rgba(18, 13, 255, 0.1);
+        }
+    }
+}

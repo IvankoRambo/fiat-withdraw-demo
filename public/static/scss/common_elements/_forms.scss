@@ -1,0 +1,296 @@
+
+.invalid-feedback {
+	&--general, &.rate {
+		display: block;
+	}
+
+	&--general {
+		&.float-right {
+			text-align: right;
+		}
+	}
+}
+
+.form-control {
+	background: $color_17;
+	color: $color_18;
+	@include font_subheading_section;
+
+	&:focus {
+		background: $color_17;
+	}
+
+	&-label {
+		color: $color_1;
+		cursor: default;
+
+		@include font_subheading_section;
+	}
+}
+
+.service-landing-button, .btn {
+	color: $white;
+	background: linear-gradient(90.29deg, #60A4FD 0.11%, #4C93FC 175.37%);
+	mix-blend-mode: normal;
+	box-shadow: 0px 2px 6px rgba(18, 13, 255, 0.1);
+	border-radius: 4px;
+
+	@include font_subheading_section;
+}
+
+.get-all-sum {
+	color: $color_1;
+	width: fit-content;
+	cursor: pointer;
+	text-decoration: underline;
+	transition: color .1s ease-in-out;
+	margin-top: .25rem;
+
+	@include font_history;
+
+	&:hover {
+		color: $black;
+	}
+}
+
+.service-landing-button {
+	width: 140px;
+	height: 52px;
+	text-align: center;
+
+	a {
+		color: $white;
+		display: block;
+		padding: {
+			top: 18px;
+			bottom: 18px;
+		}
+
+		&:hover {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+}
+
+input[type=checkbox] {
+	&:focus {
+		& ~ .custom-control-label {
+			&:before {
+				box-shadow: none;
+			}
+		}
+	}
+
+	& ~ .custom-control-label {
+		&:before, &:after {
+			top: 0;
+		}
+	}
+}
+
+.b-service {
+	&-submit-fee-block {
+		color: $color_1;
+
+		@include font_history;
+
+		.value {
+			margin-left: 3px;
+			font-weight: $font-weight-display;
+		}
+	}
+
+	&-post {
+		@include clearfix;
+
+		.invalid-feedback {
+			text-align: right;
+		}
+	}
+
+	&-list {
+		&-top {
+			list-style-type: none;
+			position: relative;
+			box-shadow: 0px 2px 6px rgba(18, 13, 255, 0.1);
+			border-radius: 4px;
+
+			&:not(.empty) {
+				cursor: pointer;
+			}
+
+			&.custom-select {
+				background: $color_3;
+				padding-left: 15px;
+				color: $white;
+				padding-top: 10px;
+
+				@include font_subheading_section;
+			}
+
+			.current {
+				&--wrapper {
+					&-content {
+						&-opener {
+							position: absolute;
+							right: 0;
+							top: 0;
+							width: 34px;
+							height: 100%;
+							background: linear-gradient(90.85deg, #85BAFF 1.1%, #6DADFF 99.67%);
+
+							&-relative {
+								position: relative;
+								top: calc(50% - 8px);
+								text-align: center;
+								padding: 0 14px 0;
+
+								@include icon(before, arrow-right);
+
+								&:before {
+									color: $white;
+									display: inline-block;
+									font-size: 12px;
+									transition: 200ms linear transform;
+								}
+							}
+						}
+
+						&-info, &-opener {
+							display: inline-block;
+						}
+					}
+				}
+			}
+
+			&.active {
+				&.custom-select {
+					background: $color_5;
+				}
+
+				.current {
+					&--wrapper {
+						&-content {
+							&-opener {
+								background: linear-gradient(90.85deg, rgba(84, 159, 255, 0.496) 1.1%, rgba(84, 159, 255, 0) 99.67%);
+
+								&-relative {
+									&:before {
+										transform: rotate(90deg);
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.b-service-list-bottom {
+					visibility: visible;
+					opacity: 1;
+					transform: translateY(0%);
+					z-index: 1;
+					transition-delay: 0s, 0s, 0.3s;
+				}
+			}
+
+			> .current {
+				&.currency {
+					&--UAH {
+						.current--wrapper-content-info {
+							.icon {
+								@include icon(before, uah);
+							}
+						}
+					}
+
+					&--BTC {
+						padding-left: 1px;
+
+						.current--wrapper-content-info {
+							.icon {
+								@include icon(before, bitcoin);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&-bottom {
+			visibility: hidden;
+			opacity: 0;
+			transform: translateY(-2em);
+  			z-index: -1;
+			list-style-type: none;
+			position: absolute;
+			background-color: $color_19;
+			top: 100%;
+			left: 0;
+			right: 34px;
+			z-index: 99;
+			padding: 0;
+			transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+			@include font_subheading_section;
+
+			.to-choose {
+				&--wrapper {
+					padding: {
+						left: 15px;
+						top: 4px;
+						bottom: 4px;
+					}
+				}
+
+				.icon {
+					color: $color_1;
+				}
+
+				.value {
+					color: $color_21;
+				}
+
+				&:hover {
+					background: $color_20;
+
+					.value {
+						color: $color_1;
+					}
+				}
+			}
+
+			& > .to-choose {
+				&.currency {
+					&--UAH {
+						.to-choose--wrapper {
+							.icon {
+								@include icon(before, uah);
+							}
+						}
+					}
+
+					&--BTC {
+						padding-left: 1px;
+
+						.to-choose--wrapper {
+							.icon {
+								@include icon(before, bitcoin);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&-top, &-bottom {
+			.icon {
+				font-size: 12px;
+				margin-right: 6px;
+				vertical-align: top;
+				display: inline-block;
+				width: 13px;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+[{
+		"serviceID": "exchange",
+		"serviceName": "Exchange"
+	}, {
+		"serviceID": "deposit",
+		"serviceName": "Deposit",
+		"showOnAccount": true
+	}, {
+		"serviceID": "withdraw",
+		"serviceName": "Withdraw",
+		"showOnAccount": true
+	}, {
+		"serviceID": "mobile-topup",
+		"serviceName": "Mobile Topup"
+}]

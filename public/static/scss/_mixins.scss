@@ -1,0 +1,310 @@
+// Mediaqueries
+
+@mixin mobile {
+	@media screen and (max-width: #{$width-tablet - 1px}) {
+		@content;
+	}
+}
+
+@mixin mobile-wide {
+	@media (min-width: #{$width-mobile-wide}) and (max-width: #{$width-tablet - 1px}) {
+		@content;
+	}
+}
+
+@mixin mobile-wide-plus {
+	@media screen and (min-width: #{$width-mobile-wide}) {
+		@content;
+	}
+}
+
+@mixin mobile-tablet {
+	@media screen and (max-width: #{$width-desktop-small - 1px}) {
+		@content;
+	}
+}
+
+@mixin mobile-wide-tablet {
+	@media (min-width: #{$width-mobile-wide}) and (max-width: #{$width-desktop-small - 1px}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$width-tablet}) and (max-width: #{$width-desktop-small - 1px}) {
+		@content;
+	}
+}
+
+@mixin from-tablet {
+	@media (min-width: #{$width-tablet}) {
+		@content;
+	}
+}
+
+@mixin tablet-desktop {
+	@media (min-width: #{$width-mobile-wide}) and (max-width: #{$width-desktop-small - 1px}) {
+		@content;
+	}
+}
+
+@mixin desktop-small {
+	@media (min-width: #{$width-desktop-small}) and (max-width: #{$width-desktop - 1px}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: #{$width-desktop}) {
+		@content;
+	}
+}
+
+@mixin desktop-hd {
+	@media screen and (min-width: #{$width-hd-desktop}) {
+		@content;
+	}
+}
+
+@mixin desktop-wide {
+	@media screen and (min-width: #{$width-desktop-wide}) {
+		@content;
+	}
+}
+
+@mixin desktop-all {
+	@media screen and (min-width: #{$width-desktop-small + 1}) {
+		@content;
+	}
+}
+
+//Font mixins
+@mixin font_main($size: inherit, $line_height: inherit, $font_family: inherit, $font_weight: normal, $letter_spacing: 1) {
+	font-size: $size;
+	font-family: $font_family;
+	line-height: $line_height;
+	letter-spacing: $letter-spacing;
+	font-weight: $font_weight;
+}
+
+//Interface mixins
+
+@mixin clearfix {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin arrow($border-width, $padding, $color, $rotate: -45deg) {
+	display: inline-block;
+	transform: rotate($rotate);
+	border: solid $color;
+	border-width: 0 $border-width $border-width 0;
+	padding: $padding;
+}
+
+//Icon-like elements
+@mixin topup_element($width, $height, $color, $border-width: 1px, $border-radius: 3px, $arr-padding: 0, $border-arrow-width: 0) {
+	$padding_arrow: 0;
+	@if $arr-padding == 0 {
+		$padding_arrow: decimal-round($width / 6);
+	} @else {
+		$padding_arrow: $arr-padding;
+	}
+
+	$border-arrow-width-value: $border-width;
+	@if $border-arrow-width != 0 {
+		$border-arrow-width-value: $border-arrow-width;
+	}
+
+
+	$width-inner: decimal-round($width / 1.41);
+	$height-inner: decimal-round($height / 1.375);
+	$height-circle: decimal-round($height / 5.5);
+	$width-arrow-block: decimal-round($width-inner / 1.4);
+
+	$position_offset: decimal-round($padding_arrow / 0.85);
+
+	& .topup {
+		&-outer, &-inner {
+			background: transparent;
+			border: $border-width solid $color;
+			border-radius: $border-radius;
+		}
+
+		&-outer {
+			position: relative;
+			width: $width;
+			height: $height;
+
+			.circle {
+				height: $height-circle;
+				width: $height-circle;
+				border: $border-width solid $color;
+				border-radius: 50%;
+				position: absolute;
+				top: calc(50% - #{$height-circle} / 2);
+				left: 2%;
+			}
+		}
+
+		&-inner {
+			position: absolute;
+			width: $width-inner;
+			height: $height-inner;
+			right: 6%;
+			top: calc(50% - #{$height-inner} / 2);
+
+			.arrows {
+				position: absolute;
+				width: $width-arrow-block;
+				height: 100%;
+				top: 0;
+				left: calc(50% - #{$width-arrow-block} / 2);
+
+				&-container {
+					position: relative;
+					width: 100%;
+					height: 100%;
+				}
+
+				span {
+					float: left;
+					text-align: center;
+					position: relative;
+					top: calc(50% - #{$position_offset});
+
+					&:not(:nth-of-type(2)) {
+						width: 33%;
+					}
+
+					&:nth-of-type(2) {
+						width: 34%;
+					}
+
+					&:before {
+						content: '';
+						@include arrow($border-arrow-width-value, $padding_arrow, $color);
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin withdraw_element($width, $height, $color, $background, $top: -24px, $left: -4px, $border-width: 1px, $border-radius: 3px, $arr-padding: 0, $border-arrow-width: 0, $transition: false) {
+	$padding_arrow: 0;
+	@if $arr-padding == 0 {
+		$padding_arrow: decimal-round($width / 6);
+	} @else {
+		$padding_arrow: $arr-padding;
+	}
+
+	$position_offset: $padding_arrow + $border-width;
+
+	$border-arrow-width-value: $border-width;
+	@if $border-arrow-width != 0 {
+		$border-arrow-width-value: $border-arrow-width;
+	}
+
+	$transition-value: none;
+	@if $transition {
+		$transition-value: all .2s ease-in-out;
+	}
+
+	& .withdraw {
+		&-front, &-behind {
+			width: $width;
+			height: $height;
+			position: relative;
+			background: $background;
+			border: $border-width solid $color;
+			border-radius: $border-radius;
+			transition: $transition-value;
+		}
+
+		&-front {
+			z-index: 5;
+
+			&:before {
+				content: '';
+
+				@include arrow($border-arrow-width-value, $padding_arrow, $color);
+
+				position: absolute;
+				top: calc(50% - #{$position_offset});
+				left: calc(50% - #{$position_offset});
+			}
+		}
+
+		&-behind {
+			z-index: 1;
+			top: $top;
+			left: $left;
+		}
+	}
+}
+
+@mixin exchange_element($width, $height, $color, $background, $border-width: 1px, $border-radius: 3px, $position-offset: 9px, $font-size: inherit, $top-offset: 0, $side-offset: 0) {
+	$width_position: ($width / 2) - ($border-width * 2);
+	$height_position: ($height / 2) - ($border-width * 2);
+
+	$top-offset-value: $position-offset;
+	@if $top-offset != 0 {
+		$top-offset-value: $top-offset;
+	}
+
+	$side-offset-value: $position-offset;
+	@if $side-offset != 0 {
+		$side-offset-value: $side-offset;
+	}
+
+	& .image-exchange {
+		width: $width;
+		height: $height;
+		position: relative;
+		background: $background;
+		border: $border-width solid $color;
+		border-radius: $border-radius;
+
+		.left-arrow, .right-arrow {
+			position: absolute;
+			font-size: $font-size;
+		}
+
+		.left-arrow {
+			@include icon(before, left-arrow);
+			top: calc(#{$height_position} - #{$top-offset-value});
+			left: calc(#{$width_position} - #{$side-offset-value});
+		}
+
+		.right-arrow {
+			@include icon(before, right-arrow);
+			bottom: calc(#{$height_position} - #{$top-offset-value});
+			right: calc(#{$width_position} - #{$side-offset-value});
+		}
+	}
+}
+
+@mixin deposit_element($width, $height, $color, $background, $border-width: 1px, $border-radius: 3px, $font-size: 10px, $left: 1px, $top: 1px) {
+	& .image-deposit {
+		width: $width;
+		height: $height;
+		position: relative;
+		background: $background;
+		border: $border-width solid $color;
+		border-radius: $border-radius;
+
+		@include icon(before, down-arrow);
+
+		&:before {
+			color: $color;
+			position: absolute;
+			font-size: $font-size;
+			left: $left;
+			top: $top;
+		}
+	}
+}

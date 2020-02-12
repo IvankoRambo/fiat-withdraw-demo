@@ -1,0 +1,913 @@
+{
+	"errors": {
+		"0": {
+			"uk": "Щось пішло не так. Будь ласка, перевірте свою історію транзакцій.",
+			"ru": "Что-то пошло не так. Пожалуйста, проверьте свою историю транзакций.",
+			"en": "Something went wrong. Please, check your activity history."
+		},
+		"1": {
+			"uk": "Некоректний рахунок для {0} {1}",
+			"ru": "Некорректный счет {0} {1}",
+			"en": "Insufficient funds for {0} {1}"
+		},
+		"100": {
+			"uk": "Поле не має бути пустим.",
+			"ru": "Поле не должно быть пустым.",
+			"en": "The field shouldn't be empty."
+		},
+		"101": {
+			"uk": "Неправильний формат даних.",
+			"ru": "Неверный формат данных.",
+			"en": "Invalid format of data."
+		},
+		"102": {
+			"uk": "Сума надто мала для цієї операції.",
+			"ru": "Сумма слишком низкая для этой операции.",
+			"en": "The amount is too low for operation."
+		},
+		"103": {
+			"uk": "Сума надто велика для цієї операції.",
+			"ru": "Сума слишком большая для этой операции.",
+			"en": "The amount is too large for operation."
+		},
+		"104": {
+			"uk": "Значення поля має підходити",
+			"ru": "Значение поля должно соответствовать",
+			"en": "The field value should match"
+		},
+		"100_amount": {
+			"uk": "Будь ласка, введіть суму",
+			"ru": "Пожалуйста, введите сумму",
+			"en": "Please, enter amount"
+		},
+		"100_cardNumber": {
+			"uk": "Будь ласка, введіть номер свої карти або виберіть зі збережених",
+			"ru": "Пожалуйста, введите свой номер карты или выберите из сохраненных",
+			"en": "Please, type your card number or select from the list of saved ones"
+		},
+		"100_amountFrom": {
+			"uk": "Будь ласка, введіть суму для продажу.",
+			"ru": "Пожалуйста, введите сумму для продажи.",
+			"en": "Please, enter an amount you want to sell."
+		},
+		"100_amountTo": {
+			"uk": "Будь ласка, введіть суму для покупки.",
+			"ru": "Пожалуйста, введите сумму для покупки.",
+			"en": "Please, enter an amount you want to acquire."
+		},
+		"100_email": {
+			"uk": "Будь ласка, введіть свою поштову адресу.",
+			"ru": "Пожалуйста, введите свой почтовый адрес.",
+			"en": "Please, enter your mail."
+		},
+		"100_password": {
+			"uk": "Будь ласка, введіть свій пароль",
+			"ru": "Пожалуйста, введите пароль",
+			"en": "Please, enter your password"
+		},
+		"101_amount": {
+			"uk": "Будь ласка, введіть ціле або дробове число.",
+			"ru": "Пожалуйста, введите целое или дробное число.",
+			"en": "Please, type an integer or fractional number."
+		},
+		"101_email": {
+			"uk": "Будь ласка, введіть поштовий адрес правильного формату",
+			"ru": "Пожалуйста, введите почтовый адрес правильного формата",
+			"en": "Please, enter an email of valid format"
+		},
+		"101_address": {
+			"uk": "Невірний формат адреси",
+			"ru": "Неверный формат адреса",
+			"en": "Invalid address format"
+		},
+		"101_forgotemail": {
+			"uk": "Будь ласка, введіть поштовий адрес правильного формату",
+			"ru": "Пожалуйста, введите почтовый адрес правильного формата",
+			"en": "Please, enter an email of valid format"
+		},
+		"101_resendemail": {
+			"uk": "Будь ласка, введіть поштовий адрес правильного формату",
+			"ru": "Пожалуйста, введите почтовый адрес правильного формата",
+			"en": "Please, enter an email of valid format"
+		},
+		"104_newpasswordconfirm": {
+			"uk": "Паролі повинні співпадати",
+			"ru": "Пароли должны совпадать",
+			"en": "The passwords should match"
+		},
+		"104_forgotconfirmpasswordtwo": {
+			"uk": "Паролі повинні співпадати",
+			"ru": "Пароли должны совпадать",
+			"en": "The passwords should match"
+		},
+		"105": {
+			"uk": "Недостатньо коштів для виконання цієї дії",
+			"ru": "Недостаточно средств для выволнения этого действия",
+			"en": "Insufficient funds"
+		},
+		"RC-0": {
+			"uk": "Будь ласка, пройдіть капчу",
+			"ru": "Пожалуйста, пройдите капчу",
+			"en": "Please, pass captcha"
+		},
+		"OA-0": {
+			"uk": "Щось пішло не так. Невірний авторизаційний запит.",
+			"ru": "Что-то пошло не так. Неправильный авторизационный запрос.",
+			"en": "Something went wrong. Wrong authorization request."
+		},
+		"OA-1": {
+			"uk": "Невірний email або пароль. Будь ласка, спробуйте ще раз.",
+			"ru": "Неправильный email или пароль. Пожалуйста, попробуйте еще раз.",
+			"en": "Invalid email or password. Please, try again."
+		},
+		"OA-2": {
+			"uk": "Двохфактона аутентифікація включена для цього акаунта. Будь ласка, введіть код.",
+			"ru": "Двухфакторная аутентификация включена для этого акаута. Пожалуйста, введите код.",
+			"en": "Two factor authentication is enabled for this account. Please, enter a code."
+		},
+		"OA-3": {
+			"uk": "Цей акаунт був зареєстрований, але не підтверджений. Будь ласка, знайдіть лист підтвердження або використайте посилання для повторного отримання листа підтвердження реєстрації нижче.",
+			"ru": "Этот аккаунт был зарегестрированный, но не подтверженный. Пожалуйста, найдите письмо подтверждения или используйте ссылку для повторного подтверждения регистрациии ниже.",
+			"en": "This account was registered, but not comfirmed. Please, find the confirmation mail or use Resend registration email link below."
+		},
+		"OA-4": {
+			"uk": "Користовач заблокований. Будь ласка, зв'яжіться з підтримкою.",
+			"ru": "Пользователь заблокирован. Пожалуйста, свяжитесь с поддержкой.",
+			"en": "Your user have has been locked. Please, contact support."
+		},
+		"AU-0": {
+			"uk": "Щось пішло не так",
+			"ru": "Что-то пошло не так",
+			"en": "Something went wrong"
+		},
+		"GL-1": {
+			"uk": "Щось пішло не так",
+			"ru": "Что-то пошло не так",
+			"en": "Something went wrong"
+		},
+		"CW-1": {
+			"uk": "Невірна блокчейн комісія",
+			"ru": "Неправильная блокчейн комиссия",
+			"en": "Incorrect blockchain fee"
+		},
+		"VN-5": {
+			"uk": "Телефоний номер має містити мінімум 12 чисел",
+			"ru": "Телефонный номер должен содержать как минимум 12 чисел",
+			"en": "Phone number must contain 12 digits"
+		},
+		"AN-1": {
+			"uk": "Невідома помилка",
+			"ru": "Неизвестная ошибка",
+			"en": "Unknown error"
+		},
+		"AN-7": {
+			"uk": "Користовач не в списку дозволених користувачів",
+			"ru": "Пользовательне в списке разрешенных пользователей",
+			"en": "The user you try to enter is not in white list"
+		},
+		"RE-1": {
+			"uk": "Курс не знайдений",
+			"ru": "Курс не найден",
+			"en": "Rate is not found"
+		},
+		"PasswordRequiresNonAlphanumeric": {
+			"uk": "Паролі повинні містити як мінімум один не алфавітно-цифровий символ.",
+			"ru": "Пароли должны содержать как минимум один не алфавитно-цифровой символ.",
+			"en": "Passwords must have at least one non alphanumeric character."
+		},
+		"PasswordRequiresLower": {
+			"uk": "Паролі мають містити як мінімум одну літеру нижнього регістру ('a'-'z').",
+			"ru": "Пароли должны содержать как минимум одну букву нижнего регистра ('a'-'z').",
+			"en": "Passwords must have at least one lowercase ('a'-'z')."
+		},
+		"PasswordRequiresUpper": {
+			"uk": "Паролі мають містити як мінімум одну літеру верхнього регістру ('A'-'Z').",
+			"ru": "Пароли должны содержать как минимум одну букву верхнего регистра ('A'-'Z').",
+			"en": "Passwords must have at least one uppercase ('A'-'Z')."
+		},
+		"PasswordRequiresDigit": {
+			"uk": "Паролі мають містити як мінімум одну цифру ('0'-'9').",
+			"ru": "Пароли должны содержать как минимум одну цифру ('0'-'9').",
+			"en": "Passwords must have at least one digit ('0'-'9')."
+		},
+		"DuplicateUserName": {
+			"uk": "Користувач з такою поштовою адресою вже зареєстрований",
+			"ru": "Пользователь с таким почтовим адресом уже зарегистрированный",
+			"en": "User with such email is already registered"
+		},
+		"SUCCESS": {
+			"uk": "Успішно",
+			"ru": "Успешно",
+			"en": "Success"
+		},
+		"SUCCESS_CHANGE_PASSWORD": {
+			"uk": "Пароль був успішно змінений",
+			"ru": "Пароль был успешно изменен",
+			"en": "The password has been changed successfully"
+		},
+		"SUCCESS_FORGOT_PASSWORD": {
+			"uk": "Будь ласка, перевірте свою пошту, щоб скинути пароль",
+			"ru": "Пожалуйста, проверьте свою почту, чтобы скинуть пароль",
+			"en": "Please, check your email to reset password"
+		},
+		"SUCCESS_FORGOT_PASSWORD_CONFIRM": {
+			"uk": "Пароль був успішно скинутий",
+			"ru": "Пароль был успешно скинутый",
+			"en": "The password has been reseted successfully"
+		},
+		"SUCCESS_RESEND_EMAIL": {
+			"uk": "Новий лист для підтвердження був відісланий на Вашу поштову скриньку",
+			"ru": "Новое письмо для подтверждения было отправленно на Вашу почту",
+			"en": "The new confirmation letter has been sent to your email box"
+		},
+		"SUCCESS_TWO_FACTOR_CODE": {
+			"uk": "Налаштування для двухфакторної аутентифікації було застосовано",
+			"ru": "Настройки для двухфакторной аутентификации были применены",
+			"en": "The settings for 2-factor authentication has been successfully applied"
+		},
+		"SUCCESS_POST_EXCHANGE_RESPONSE": {
+			"uk": "Операція обміну була успішно застосована для обробки",
+			"ru": "Операция обмена была успешно применена для обработки",
+			"en": "The exchange operation has been successfully applied for processing"
+		},
+		"SUCCESS_POST_FIAT_WITHDRAW_RESPONSE": {
+			"uk": "Будь ласка, перевірте свою пошту для підтвердження транзакції на вивід коштів",
+			"ru": "Пожалуйста, проверьте свою почту для подтверждения транзакции на вывод средств",
+			"en": "Please, check your email to confirm withdraw transaction"
+		},
+		"POST_CRYPTO_WITHDRAW_RESPONSE": {
+			"uk": "Будь ласка, перевірте свою пошту для підтвердження транзакції на вивід коштів",
+			"ru": "Пожалуйста, проверьте свою почту для подтверждения транзакции на вывод средств",
+			"en": "Please, check your email to confirm withdraw transaction"
+		},
+		"MOBILE_TOPUP_RESPONSE": {
+			"uk": "Будь ласка, перевірте свою пошту для підтвердження транзакції на поповнення телефону",
+			"ru": "Пожалуйста, проверьте свою почту для подтверждения транзакции на пополнения телефона",
+			"en": "Please, check your email to confirm mobile topup transaction"
+		}
+		},
+		"info": {
+		"brand.name": "Money Map",
+		"brand.header.name": "MoneyMap",
+		"google.rates.reference": "https://chrome.google.com/webstore/detail/chrome-currency-converter/anbfhidldjknonaihbalghlebaijealk",
+		"google.rates.name": "Google",
+		"yandex.rates.reference": "https://money.yandex.ru/page?id=527685",
+		"yandex.rates.name": "Yandex",
+		"yahoo.rates.reference": "https://finance.yahoo.com/currency-converter",
+		"yahoo.rates.name": "Yahoo",
+		"facebook.socials.reference": "https://www.facebook.com/",
+		"facebook.socials.name": "facebook",
+		"twitter.socials.reference": "https://twitter.com/",
+		"twitter.socials.name": "twitter",
+		"entranceheader.reference.login": {
+			"uk": "Створити акаунт",
+			"ru": "Создать аккаунт",
+			"en": "Create account"
+		},
+		"currency.from": {
+			"uk": "Віддаєте",
+			"ru": "Отдаете",
+			"en": "Amount From"
+		},
+		"currency.to": {
+			"uk": "Отримуєте",
+			"ru": "Получаете",
+			"en": "Amount To"
+		},
+		"entranceheader.reference.login.link": "/registration",
+		"entranceheader.reference.registration": {
+			"uk": "Увійти",
+			"ru": "Войти",
+			"en": "Sign In"
+		},
+		"entranceheader.reference.registration.link": "/login",
+		"entranceheader.reference.internal": {
+			"uk": "Внутрішній сайт",
+			"ru": "Внутренний сайт",
+			"en": "Go to internal app"
+		},
+		"entranceheader.reference.internal.link": "/services",
+		"entranceheader.reference.profile": {
+			"uk": "Повернутись на головну",
+			"ru": "Вернуться на главную",
+			"en": "Go to home page"
+		},
+		"entranceheader.reference.profile.link": "/services",
+		"entranceheader.reference.forgotpassword": {
+			"uk": "Забули пароль?",
+			"ru": "Забыли пароль?",
+			"en": "Forgot password?"
+		},
+		"entranceheader.reference.resendregistration": {
+			"uk": "Переслати мені лист реєстрації",
+			"ru": "Переслать мне письмо регистрации",
+			"en": "Resend me registration email"
+		},
+		"entranceheader.reference.resendemail": {
+			"uk": "Переслати лист",
+			"ru": "Переслать письмо",
+			"en": "Resend email"
+		},
+		"loginform.title": {
+			"uk": "Увійти",
+			"ru": "Войти",
+			"en": "Sign In"
+		},
+		"mobiletopup.button.value": {
+			"uk": "Поповнити рахунок",
+			"ru": "Пополнить счет",
+			"en": "Topup mobile"
+		},
+		"button.change": {
+			"uk": "Змінити",
+			"ru": "Изменить",
+			"en": "Change"
+		},
+		"entranceheader.reference.changepassword": {
+			"uk": "Змінити пароль",
+			"ru": "Сменить пароль",
+			"en": "Change password"
+		},
+		"button.change.submit": {
+			"uk": "Оновити пароль",
+			"ru": "Обновить пароль",
+			"en": "Update password"
+		},
+		"entranceheader.reference.twofactor": {
+			"uk": "Виберіть додаток",
+			"ru": "Выберите приложение",
+			"en": "Choose software token"
+		},
+		"button.send": {
+			"uk": "Відправити",
+			"ru": "Отправить",
+			"en": "Send"
+		},
+		"button.submit": {
+			"uk": "Відправити",
+			"ru": "Отправить",
+			"en": "Submit"
+		},
+		"button.cancel": {
+			"uk": "Відмінити",
+			"ru": "Отменить",
+			"en": "Cancel"
+		},
+		"button.enable": {
+			"uk": "Ввключити",
+			"ru": "Включить",
+			"en": "Enable"
+		},
+		"button.disable": {
+			"uk": "Виключити",
+			"ru": "Выключить",
+			"en": "Disable"
+		},
+		"button.make.exchange": {
+			"uk": "Обміняти",
+			"ru": "Обменять",
+			"en": "Exchange"
+		},
+		"account.twofactor": {
+			"uk": "Включити двухфакторну аутентифікацію",
+			"ru": "Включить двухфакторную аутентификацию",
+			"en": "Enable 2-factor authentication"
+		},
+		"account.twofactor.disable": {
+			"uk": "Виключити двухфакторну аутентифікацію",
+			"ru": "Выключить двухфакторную аутентификацию",
+			"en": "Disable 2-factor authentication"
+		},
+		"account.title": {
+			"uk": "Акаунт",
+			"ru": "Аккаунт",
+			"en": "Account"
+		},
+		"account.email": {
+			"uk": "Email",
+			"ru": "Email",
+			"en": "Email"
+		},
+		"account.password": {
+			"uk": "Пароль",
+			"ru": "Пароль",
+			"en": "Password"
+		},
+		"account.oldpassword": {
+			"uk": "Ваш старий пароль",
+			"ru": "Ваш старый пароль",
+			"en": "Your old password"
+		},
+		"account.newpassword": {
+			"uk": "Новий пароль",
+			"ru": "Новый пароль",
+			"en": "New password"
+		},
+		"account.newpasswordconfirm": {
+			"uk": "Підтвердити новий пароль",
+			"ru": "Подтвердить новый пароль",
+			"en": "Confirm new password"
+		},
+		"account.forgotpassword.email": {
+			"uk": "Введіть свій email",
+			"ru": "Введите свой email",
+			"en": "Enter your email"
+		},
+		"account.resendregistration.email": {
+			"uk": "Введіть свій email",
+			"ru": "Введите свой email",
+			"en": "Enter your email"
+		},
+		"account.forgotpasswordconfrim.email": {
+			"uk": "Ваш новий пароль",
+			"ru": "Ваш новый пароль",
+			"en": "Your new password"
+		},
+		"account.resetconfirm.title": {
+			"uk": "Введіть новий пароль для скидування",
+			"ru": "Введите новый пароль для скидывания",
+			"en": "Enter a new password to reset"
+		},
+		"account.reset.title": {
+			"uk": "Скинути пароль",
+			"ru": "Скинуть пароль",
+			"en": "Reset password"
+		},
+		"account.twofactor.title": {
+			"uk": "Виберіть додаток",
+			"ru": "Выберите приложение",
+			"en": "Choose software token"
+		},
+		"account.twofactor.signUp.title": {
+			"uk": "Токен для підписки",
+			"ru": "Токен для подписки",
+			"en": "Sign up token"
+		},
+		"account.twofactor.code.title": {
+			"uk": "Наберіть отриманий код",
+			"ru": "Наберите полученный код",
+			"en": "Type received code"
+		},
+		"account.bar.title": {
+			"uk": "Ваші акаунти",
+			"ru": "Ваши аккаунты",
+			"en": "Your accounts"
+		},
+		"account.select": {
+			"uk": "Вибрати акаунт",
+			"ru": "Выбрать аккаунт",
+			"en": "Select account"
+		},
+		"registerform.title": {
+			"uk": "Створити акаунт",
+			"ru": "Создать аккаунт",
+			"en": "Create account"
+		},
+		"activity.history.title": {
+			"uk": "Історія Транзакцій",
+			"ru": "История Транзакций",
+			"en": "Activity History"
+		},
+		"type.label": {
+			"uk": "Тип",
+			"ru": "Тип",
+			"en": "Type"
+		},
+		"hash.label": {
+			"uk": "Хэш",
+			"ru": "Хэш",
+			"en": "Hash"
+		},
+		"given.amount.label": {
+			"uk": "Віддаєте",
+			"ru": "Отдаете",
+			"en": "Amount From"
+		},
+		"received.amount.label": {
+			"uk": "Отримуєте",
+			"ru": "Получаете",
+			"en": "Amount To"
+		},
+		"phone.label": {
+			"uk": "Твій телефоний номер",
+			"ru": "Твой телефонный номер",
+			"en": "Your phone number"
+		},
+		"amount.label": {
+			"uk": "Сума",
+			"ru": "Сумма",
+			"en": "Amount"
+		},
+		"address.label": {
+			"uk": "Адреса",
+			"ru": "Адрес",
+			"en": "Address"
+		},
+		"transaction.date.label": {
+			"uk": "Дата транзакції",
+			"ru": "Дата транзакции",
+			"en": "Transaction date"
+		},
+		"show.less.label": {
+			"uk": "Сховати деталі",
+			"ru": "Спрятать детали",
+			"en": "Show less"
+		},
+		"card.number.label": {
+			"uk": "Номер карти",
+			"ru": "Номер карты",
+			"en": "Card number"
+		},
+		"general.email": "Email",
+		"general.password": {
+			"uk": "Пароль",
+			"ru": "Пароль",
+			"en": "Password"
+		},
+		"general.twofactor": {
+			"uk": "Двухфакторний код",
+			"ru": "Двухфакторный код",
+			"en": "Two Factor code"
+		},
+		"loginmenu.profile": {
+			"uk": "Налаштування",
+			"ru": "Настройки",
+			"en": "Settings"
+		},
+		"loginmenu.logout": {
+			"uk": "Вийти",
+			"ru": "Выйти",
+			"en": "Log out"
+		},
+		"blockchain.fee": {
+			"uk": "Блокчейн комісія:",
+			"ru": "Блокчейн комисия:",
+			"en": "Blockchain fee:"
+		},
+		"with.fee.calculate": {
+			"uk": "Сума з комісією:",
+			"ru": "Сумма с комисией:",
+			"en": "Amount with fee:"
+		},
+		"fee.calculate": {
+			"uk": "Фактична сума:",
+			"ru": "Фактическая сумма:",
+			"en": "Actual amount:"
+		},
+		"fiatwithdraw.fee": {
+			"uk": "Комісія на вивід фіата:",
+			"ru": "Комиссия на вывод фиата:",
+			"en": "Fiat withdraw fee:"
+		},
+		"fiatdeposit.fee": {
+			"uk": "Комісія на депозит фіата:",
+			"ru": "Комиссия на депозит фиата:",
+			"en": "Fiat deposit fee:"
+		},
+		"mobiletopup.fee": {
+			"uk": "Комісія на поповнення мобільного:",
+			"ru": "Комиссия на пополнение мобильного:",
+			"en": "Mobile topup fee:"
+		},
+		"fee.empty": {
+			"uk": "Без комісії",
+			"ru": "Без комиссии",
+			"en": "No fee"
+		},
+		"fee.checkbox.exclusive": {
+			"uk": "Додати комісію до суми",
+			"ru": "Включить комисию в сумму",
+			"en": "Include fee in amount"
+		},
+		"fee.checkbox.inclusive": {
+			"uk": "Вилучити комісію з суми",
+			"ru": "Исключить комисию из суммы",
+			"en": "Exclude fee from amount"
+		},
+		"landing.try-it-out.title": {
+			"uk": "Вітаємо в системі MoneyMap!",
+			"ru": "Добро пожаловать в MoneyMap!",
+			"en": "Welcome to MoneyMap!"
+		},
+		"landing.try-it-out.description": {
+			"uk": "Система MoneyMap - це електронний гаманець який дозволяє швидко, легко та вигідно обмінювати та зберігати такі валюти як біткоїн, гривня тощо.",
+			"ru": "Система MoneyMap - это электронный кошелек который позволяет быстро, легко и выгодно менять и хранить такие валюты как биткоин, гривна и другие.",
+			"en": "MoneyMap is a digital wallet wich provides you fast, easy and profitable exchange and keep currencies such as bitcoin, hryvnia etc."
+		},
+		"landing.rates.title": {
+			"uk": "Курс обміну валют MoneyMap в реальному часі",
+			"ru": "Курс обмена валют MoneyMap в реальном времени",
+			"en": "Real-time MoneyMap exchange rate"
+		},
+		"landing.rates.description": {
+			"uk": "Поспішай зробити обмін через систему MoneyMap по вигідному курсу!",
+			"ru": "Поспеши сделать обмен через систему MoneyMap по выгодному курсу!",
+			"en": "Hurry up to exchange the currency you need by MoneyMap system at a favorable rate!"
+		},
+		"landing.rates.description.reference": {
+			"uk": "Курси на інших ресурсах",
+			"ru": "Курсы на других ресурсах",
+			"en": "See rates on other resorces"
+		},
+		"landing.how-it-works.title": {
+			"uk": "Як це працює",
+			"ru": "Как это работает",
+			"en": "How it works"
+		},
+		"landing.real-time-reports.title": {
+			"uk": "Транзакції MoneyMap в реальному часі",
+			"ru": "Транзакции MoneyMap в реальном времени",
+			"en": "Real-time MoneyMap transactions"
+		},
+		"landing.real-time-reports.description": {
+			"uk": "Список відображає транзакції користувачів системи MoneyMap в реальному часі",
+			"ru": "Список отображает транзакции пользователей системы MoneyMap в реальном времени",
+			"en": "The list displays the transactions of MoneyMap users in real time"
+		},
+		"chart.axisX.label": {
+			"uk": "Час",
+			"ru": "Время",
+			"en": "Time"
+		},
+		"chart.axisY.label": {
+			"uk": "Сума",
+			"ru": "Сумма",
+			"en": "Amount"
+		},
+		"addressTo.title": {
+			"uk": "Адрес отримувача",
+			"ru": "Адрес получателя",
+			"en": "Receiver address"
+		},
+		"cardNumber.title": {
+			"uk": "Номер карти",
+			"ru": "Номер карты",
+			"en": "Card number"
+		},
+		"exhange.rate.refresh": {
+			"uk": "Поточний рейт скоро буде оновлений",
+			"ru": "Текущий рэйт скоро будет обновлен",
+			"en": "Current rate will be refreshed soon"
+		},
+		"exhange.confirm.refresh": {
+			"uk": "Поспішай! Підтвердження обміну незабаром буде зачинено.",
+			"ru": "Поспишите! Подтверждение обмена скоро будет закрыто.",
+			"en": "Hurry up! Confirmation will be closed soon."
+		},
+		"activity.history.empty.description": {
+			"uk": "На разі у Вас у списку нема ні однієї транзакції",
+			"ru": "На данный момент у Вас в списке нет ни одной транзакции",
+			"en": "There are still no activities in your list for now"
+		},
+		"label.total": {
+			"uk": "Вся сума",
+			"ru": "Вся сумма",
+			"en": "Total"
+		},
+		"general.popup.title.pending": {
+			"uk": "Підтвердити дію",
+			"ru": "Подтвердить действие",
+			"en": "Confirm action"
+		},
+		"general.popup.title.success": {
+			"uk": "Успішно",
+			"ru": "Успешно",
+			"en": "Success"
+		},
+		"general.popup.title.fail": {
+			"uk": "Невдало",
+			"ru": "Неудачно",
+			"en": "Failed"
+		},
+		"general.popup.title.button.pending": {
+			"uk": "OK",
+			"ru": "OK",
+			"en": "OK"
+		},
+		"general.popup.title.button.success": {
+			"uk": "OK",
+			"ru": "OK",
+			"en": "OK"
+		},
+		"general.popup.title.button.fail": {
+			"uk": "OK",
+			"ru": "OK",
+			"en": "OK"
+		},
+		"general.popup.text.SUCCESS_FIAT_WITHDRAW_CONFIRM": {
+			"uk": "Операція фіатного виводу пройшла вдало",
+			"ru": "Операция фиатного вывода прошла успешно",
+			"en": "Fiat withdraw operation succeeded"
+		},
+		"general.popup.text.SUCCESS_CRYPTO_WITHDRAW_CONFIRM": {
+			"uk": "Операція крипто виводу пройшла вдало",
+			"ru": "Операция крипто вывода прошла успешно",
+			"en": "Crypto withdraw operation succeeded"
+		},
+		"general.popup.text.SUCCESS_TOPUP_CONFIRM": {
+			"uk": "Операція поповнення мобільного пройшла вдало",
+			"ru": "Операция пополнения мобильного прошла успешно",
+			"en": "Mobile topup withdraw operation succeeded"
+		},
+		"general.popup.text.FAIL_FIAT_WITHDRAW_CONFIRM": {
+			"uk": "Операція фіатного виводу не вдалася",
+			"ru": "Операция фиатного вывода не удалась",
+			"en": "Fiat withdraw operation failed"
+		},
+		"general.popup.text.FAIL_CRYPTO_WITHDRAW_CONFIRM": {
+			"uk": "Операція крипто виводу не вдалася",
+			"ru": "Операция крипто вывода не удалась",
+			"en": "Crypto withdraw operation failed"
+		},
+		"general.popup.text.FAIL_TOPUP_CONFIRM": {
+			"uk": "Операція поповнення мобільного не вдалася",
+			"ru": "Операция пополнения мобильного не удалась",
+			"en": "Mobile topup withdraw operation failed"
+		},
+		"general.popup.text.SUCCESS_REGISTRATION_CONFIRM": {
+			"uk": "Ви успішно зареєструвалися! Будь ласка, використовуйте свою поштову адресу і пароль для входу.",
+			"ru": "Вы успешно зарегистрировались! Пожалуйста, используйте свой почтовый адрес и пароль для входа.",
+			"en": "You have successefully registered! Please, use your email and password to login."
+		},
+		"general.popup.text.FAIL_REGISTRATION_CONFIRM": {
+			"uk": "Щось пішло не так при реєстрації. Будь ласка, спробуйте знову.",
+			"ru": "Что-то пошло не так при регистрации. Пожалуйста, попробуйте снова.",
+			"en": "Something has happened upon registration. Please, try again."
+		},
+		"general.popup.text.SUCCESS_FIAT_DEPOSIT_CONFIRM": {
+			"uk": "Операція фіат депозиту пройшла вдало",
+			"ru": "Операция фиат депозита прошла успешно",
+			"en": "Fiat deposit operation succeeded"
+		},
+		"general.popup.text.FAIL_FIAT_DEPOSIT_CONFIRM": {
+			"uk": "Операція фіат депозиту не вдалася",
+			"ru": "Операция фиат депозита не удалась",
+			"en": "Fiat deposit operation failed"
+		},
+		"confirm.exchange.popup.title": {
+			"uk": "Підтвердження обміну",
+			"ru": "Подтверждение обмена",
+			"en": "Exchange confirmation"
+		},
+		"confirm.exchange.popup.title.submit": {
+			"uk": "Будь ласка, перевірте і підтвердіть обмін:",
+			"ru": "Пожалуйста, проверьте и подтвердите обмен:",
+			"en": "Please, review and confirm your exchange:"
+		},
+		"confirm.fiat.withdraw.popup.title": {
+		"uk": "Підтвердження виводу",
+		"ru": "Подтверждение вывода",
+		"en": "Withdraw confirmation"
+		},
+		"confirm.fiat.withdraw.popup.title.submit": {
+			"uk": "Будь ласка, перевірте і підтвердіть вивід:",
+			"ru": "Пожалуйста, проверьте и подтвердите вывод:",
+			"en": "Please, review and confirm your withdraw:"
+		},
+		"confirm.crypto.withdraw.popup.title": {
+			"uk": "Підтвердження виводу",
+			"ru": "Подтверждение вывода",
+			"en": "Withdraw confirmation"
+		},
+		"confirm.crypto.withdraw.popup.title.submit": {
+			"uk": "Будь ласка, перевірте і підтвердіть вивід:",
+			"ru": "Пожалуйста, проверьте и подтвердите вывод:",
+			"en": "Please, review and confirm your withdraw:"
+		},
+	   "twofactor.google": "Google Authenticator",
+	   "all.sum.topup": {
+			"uk": "Поповнити на всю суму",
+			"ru": "Пополнить на всю сумму",
+			"en": "Topup all sum"
+	   },
+	   "all.sum.withdraw": {
+			"uk": "Перевести всю суму",
+			"ru": "Перевести всю сумму",
+			"en": "Withdraw all sum"
+	   },
+		"all.sum.exchange.from": {
+			"uk": "Обміняти всю валюту, що віддаємо",
+			"ru": "Обменять всю валюту, которую отдаем",
+			"en": "Exchange all given sum"
+		},
+		"all.sum.exchange.to": {
+			"uk": "Обміняти всю валюту, що отримаємо",
+			"ru": "Обменять всю валюту, которую получаем",
+			"en": "Exchange all received sum"
+		},
+		"all.sum.general": {
+			"uk": "Використати всю суму",
+			"ru": "Использовать всю сумму",
+			"en": "Use max"
+		},
+		"service.shortcut": {
+			"uk": "{0} ",
+			"ru": "{0} ",
+			"en": "{0} "
+		},
+		"your.address.label": {
+			"uk": "Ваша {0} адреса",
+			"ru": "Ваш {0} адрес",
+			"en": "Your {0} address"
+		},
+		"copy.label": {
+			"uk": "Зкопіювати",
+			"ru": "Скопировать",
+			"en": "Copy"
+		},
+		"button.make.deposit": {
+			"uk": "Поповнити",
+			"ru": "Пополнить",
+			"en": "Deposit"
+		},
+		"button.make.withdraw": {
+			"uk": "Вивести",
+			"ru": "Вывести",
+			"en": "Withdraw"
+		},
+		"cardswitcher.new": {
+			"uk": "Ввести номер карти",
+			"ru": "Ввести номер карты",
+			"en": "Enter card number"
+		},
+		"cardswitcher.saved": {
+			"uk": "Вибрати збережену карту",
+			"ru": "Выбрать сохраненную карту",
+			"en": "Select saved card"
+		}
+	},
+	"lang": {
+	   "lang.uk": "Українська",
+	   "lang.en": "English",
+	   "lang.ru": "Русский"
+	},
+	"serviceList": {
+	   "service.name.general": {
+		  "uk": "Головна",
+		  "ru": "Главная",
+		  "en": "Home"
+	   },
+	   "service.name.exchange": {
+		  "uk": "Обміняти",
+		  "ru": "Обменять",
+		  "en": "Exchange"
+	   },
+	   "service.name.deposit": {
+		  "uk": "Поповнити",
+		  "ru": "Пополнить",
+		  "en": "Deposit"
+	   },
+	   "service.name.deposit.fiat": {
+		  "uk": "Фіат депозит",
+		  "ru": "Фиат депозит",
+		  "en": "Fiat deposit"
+	   },
+	   "service.name.deposit.crypto": {
+		  "uk": "Крипто депозит",
+		  "ru": "Крипто депозит",
+		  "en": "Crypto deposit"
+	   },
+	   "service.name.withdraw": {
+		  "uk": "Вивести",
+		  "ru": "Вывести",
+		  "en": "Withdraw"
+	   },
+	   "service.name.withdraw.fiat": {
+		  "uk": "Фіат вивід",
+		  "ru": "Фиат вывод",
+		  "en": "Fiat withdraw"
+	   },
+	   "service.name.withdraw.crypto": {
+		  "uk": "Крипто вивід",
+		  "ru": "Крипто вывод",
+		  "en": "Crypto withdraw"
+	   },
+	   "service.name.mobile-topup": {
+		  "uk": "Поповнити мобільний",
+		  "ru": "Пополнить мобильный",
+		  "en": "Mobile topup"
+	   }
+	},
+	"landingList": {
+	   "landing.name.try-it-out": {
+		  "uk": "Сервіси",
+		  "ru": "Сервисы",
+		  "en": "Try it out"
+	   },
+	   "landing.name.rates": {
+		  "uk": "Курси валют",
+		  "ru": "Курсы валют",
+		  "en": "Rates"
+	   },
+	   "landing.name.real-time-reports": {
+		  "uk": "Статистика",
+		  "ru": "Статистика",
+		  "en": "Real time reports"
+	   },
+	   "landing.name.how-it-works": {
+		  "uk": "Як це працює",
+		  "ru": "Как это работает",
+		  "en": "How it works"
+	   }
+	}
+ }

@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	.b-middle-row {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		background: $color_4;
+		box-shadow: 0px 4px 4px rgba(5, 113, 241, 0.25);
+
+		&.login,
+		&.profile,
+		&.registration {
+			flex-direction: column;
+			flex-wrap: nowrap;
+			align-items: stretch;
+		}
+
+		.l-accounts, main {
+			padding: 10px;
+		}
+
+		main {
+			flex: 3 auto;
+		}
+	}
+}
+

@@ -1,0 +1,7 @@
+{
+	"host": "",
+	"sections": {
+		"cards": "/api/cards/",
+		"fiatFees": "/api/fiat-fees"
+	}
+}

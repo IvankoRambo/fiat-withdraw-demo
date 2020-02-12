@@ -1,0 +1,75 @@
+@mixin font_display {
+	@include font_main($font-size-display, $font-line-height-display, $font-montserrat-medium, $font-weight-display);
+}
+
+@mixin font_dashboard {
+	@include font_main($font-size-display, $font-line-height-heading, $font-montserrat-medium, $font-weight-body);
+}
+
+@mixin font_heading_big {
+	@include font_main($font-size-heading-big, $font-line-height-heading-big, $font-montserrat-semibold);
+}
+
+@mixin font_heading_section {
+	@include font_main($font-size-heading-section, $font-line-height-heading-section, $font-montserrat-medium, $font-weight-display);
+}
+
+@mixin font_heading {
+	@include font_main($font-size-heading, $font-line-height-heading, $font-montserrat-semibold);
+}
+
+@mixin font_heading_footer {
+	@include font_main($font-size-heading, $font-line-height-subheading-body, $font-montserrat-medium, $font-weight-body);
+}
+
+@mixin font_subheading {
+	@include font_main($font-size-subheading-body, $font-line-height-subheading-body, $font-montserrat-medium);
+}
+
+@mixin font_subheading_section_big {
+	@include font_main($font-size-subheading-body-big, $font-line-height-subheading-body-big, $font-montserrat-medium, $font-weight-body);
+}
+
+@mixin font_subheading_section {
+	@include font_main($font-size-subheading-body, $font-line-height-subheading-section, $font-montserrat-medium, $font-weight-body);
+}
+
+@mixin font_description_main {
+	@include font_main($font-size-heading, $font-line-height-description, $font-montserrat-medium);
+}
+
+@mixin font_body {
+	@include font_main($font-size-subheading-body, $font-line-height-subheading-body, $font-montserrat-medium, $font-weight-body);
+}
+
+@mixin font_caption {
+	@include font_main($font-size-caption, $font-line-height-caption, $font-montserrat-medium);
+}
+
+@mixin font_history {
+	@include font_main($font-size-caption, $font-line-height-history, $font-montserrat-medium, $font-weight-body);
+}
+
+@mixin font_history_small {
+	@include font_main($font-size-history-small, $font-line-height-axis, $font-montserrat-medium, $font-weight-body);
+}
+
+@mixin font_totals {
+	@include font_main($font-size-logo, $font-line-height-totals, $font-montserrat-medium, $font-weight-body);
+}
+
+@mixin font_logo {
+	@include font_main($font-size-logo, $font-line-height-display, $font-helvetica-boldoblique);
+}
+
+@mixin font_tabs {
+	@include font_main($font-size-heading, $font-line-height-tabs, $font-montserrat-medium, $font-weight-display);
+}
+
+@mixin font_axis {
+	@include font_main($font-size-axis, $font-line-height-axis, $font-montserrat-medium, $font-weight-display);
+}
+
+@mixin font_foreign_label {
+	@include font_main($font-size-foreign-label, $font-line-height-foreign-label, $font-montserrat-medium, $font-weight-display);
+}

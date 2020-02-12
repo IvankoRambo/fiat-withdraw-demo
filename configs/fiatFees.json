@@ -1,0 +1,5 @@
+{
+	"fiatWithdrawFee": 1,
+	"mobileTopupFee": null,
+	"fiatDepositFee": [1, 5]
+}

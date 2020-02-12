@@ -1,0 +1,133 @@
+/*
+General icons extend
+pattern
+*/
+
+%icon {
+	font-family: $font-icons;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	speak: none;
+	text-decoration: none;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Icon variables
+*/
+$icon-empty-circle: '\e903';
+$icon-right-arrow: '\e904';
+$icon-left-arrow: '\e905';
+$icon-down-arrow: '\e906';
+$icon-arrow-topup: '\e907';
+$icon-pending-full: '\e91a';
+$icon-approved-full: '\e91c';
+$icon-reject-new: '\e918';
+$icon-exclamation-mark: '\e919';
+$icon-pros: '\e901';
+$icon-uah-filled: '\e909';
+$icon-uah: '\e90b';
+$icon-rub: '\e90c';
+$icon-rmb: '\e90d';
+$icon-logo: '\e90e';
+$icon-gear: '\e90f';
+$icon-euro: '\e910';
+$icon-dots: '\e911';
+$icon-dollar: '\e912';
+$icon-bitcoin-filled: '\e913';
+$icon-bitcoin: '\e915';
+$icon-arrow-right: '\e916';
+$icon-arrow-down: '\e917';
+
+@function icon-char($filename){
+	$char: "";
+
+	@if $filename == empty-circle {
+		$char: $icon-empty-circle;
+	}
+	@if $filename == right-arrow {
+		$char: $icon-right-arrow;
+	}
+	@if $filename == left-arrow {
+		$char: $icon-left-arrow;
+	}
+	@if $filename == down-arrow {
+		$char: $icon-down-arrow;
+	}
+	@if $filename == arrow-topup {
+		$char: $icon-arrow-topup;
+	}
+	@if $filename == pending-full {
+		$char: $icon-pending-full;
+	}
+	@if $filename == approved-full {
+		$char: $icon-approved-full;
+	}
+	@if $filename == reject-new {
+		$char: $icon-reject-new;
+	}
+	@if $filename == exclamation-mark {
+		$char: $icon-exclamation-mark;
+	}
+	@if $filename == pros {
+		$char: $icon-pros;
+	}
+	@if $filename == uah-filled {
+		$char: $icon-uah-filled;
+	}
+	@if $filename == uah {
+		$char: $icon-uah;
+	}
+	@if $filename == rub {
+		$char: $icon-rub;
+	}
+	@if $filename == rmb {
+		$char: $icon-rmb;
+	}
+	@if $filename == logo {
+		$char: $icon-logo;
+	}
+	@if $filename == gear {
+		$char: $icon-gear;
+	}
+	@if $filename == euro {
+		$char: $icon-euro;
+	}
+	@if $filename == dots {
+		$char: $icon-dots;
+	}
+	@if $filename == dollar {
+		$char: $icon-dollar;
+	}
+	@if $filename == bitcoin-filled {
+		$char: $icon-bitcoin-filled;
+	}
+	@if $filename == bitcoin {
+		$char: $icon-bitcoin;
+	}
+	@if $filename == arrow-right {
+		$char: $icon-arrow-right;
+	}
+	@if $filename == arrow-down {
+		$char: $icon-arrow-down;
+	}
+
+	@return $char;
+}
+
+@mixin icon($position: before, $icon: false){
+	@if $position == both {
+		$position: 'before, &:after';
+	}
+
+	&:#{$position} {
+		@extend %icon;
+
+		@if $icon {
+			content: icon-char($icon);
+		}
+	}
+}
