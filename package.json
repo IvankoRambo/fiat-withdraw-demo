@@ -57,6 +57,6 @@
     "rxjs": "^6.3.3",
     "wallet-address-validator": "^0.2.4",
     "watchify": "^3.11.0",
-    "ws": "^6.1.2"
+    "ws": "^7.4.6"
   }
 }
